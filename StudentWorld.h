@@ -17,9 +17,11 @@ public:
     virtual void cleanUp();
 
 private:
+    bool findDistance(Actor* actor, int x, int y);
     std::list<Actor*> m_actors;
     Actor* m_socrates;
 
+    bool invalid_location;
     int m_level;
 };
 
